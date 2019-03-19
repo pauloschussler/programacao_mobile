@@ -1,1 +1,2 @@
-document.querySelector('#app').innerHTML = "FUNCIONANDO"
+document.querySelector('#app').innerHTML = 'FUNCIONANDO'
+    
