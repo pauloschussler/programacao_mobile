@@ -23,7 +23,7 @@ self.addEventListener('fetch', event => {
           return cachedResponse
         }
 
-        return caches.open(RUNTIME).then(cache => {
+        return caches.open(PRECACHE).then(cache => {
           return fetch(event.request).then(response => {
             // Put a copy of the response in the runtime cache.
             return cache.put(event.request, response.clone()).then(() => {
